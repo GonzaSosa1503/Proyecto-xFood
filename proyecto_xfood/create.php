@@ -1,7 +1,7 @@
 <?php
 // Establecer una conexión a la base de datos
 // $conexion = mysqli_connect("localhost", "usuario", "contraseña", "base_de_datos");
-$conexion = mysqli_connect("localhost", "root", "", "abejas");
+$conexion = mysqli_connect("localhost", "root", "", "xfood");
 
 // Comprobar la conexión y devolver error
 if (mysqli_connect_errno()) {

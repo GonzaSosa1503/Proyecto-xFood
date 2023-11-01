@@ -8,7 +8,7 @@
 $host = "localhost"; 
 $usuario = "root"; // $usuario = "usuario";
 $contraseña = ""; // $contraseña = "contraseña";
-$base_de_datos = "proyecto_xfood/usuarios.sql";
+$base_de_datos = "xfood";
 
 // Crear una nueva conexión a la base de datos
 $conexion = new mysqli($host, $usuario, $contraseña, $base_de_datos);
