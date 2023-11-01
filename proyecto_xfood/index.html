@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-puto putona
-anashei
 <html lang="es">
     <head>
         <meta charset="utf-8" />
@@ -142,9 +140,60 @@ anashei
                 </div>
             </div>
         </section>
+
+<!-- Comentarios -->
+<section class="black py-5">
+    <div class="container px-5 my-5 px-5">
+        <div class="text-center mb-5">
+            <div class="feature bg-primary bg-warning text-black rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
+            <h2 class="fw-bolder text-warning">envianos un comentario</h2>
+            <p class="lead mb-0 text-warning">¡lo apreciamos mucho!</p>
+        </div>
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-6">
+                
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN"
+                     action="create.php" method="post" class="row g-3 mb-3">
+                  
+                    <div class="form-floating mb-3">
+                        <input class="form-control" name="names" id="names" type="text" placeholder="Enter your name..." data-sb-validations="required" class="form-control" required />
+                        <label for="name" class="form-label">Nombre Completo</label>
+                        <div class="invalid-feedback" data-sb-feedback="name:required">Requiere un nombre.</div>
+                    </div>
+               
+                    <div class="form-floating mb-3">
+                        <input class="form-control" name="email" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                        <label for="email">Direccion de Email</label>
+                        <div class="invalid-feedback" data-sb-feedback="email:required">Requiere un email.</div>
+                        <div class="invalid-feedback" data-sb-feedback="email:email">Email no valido.</div>
+                    </div>
+                   
+                    <div class="form-floating mb-3">
+                        <input class="form-control" name="phone" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                        <label for="phone">Numero de telefono</label>
+                        <div class="invalid-feedback" data-sb-feedback="phone:required">Requiere un numero de telefono.</div>
+                    </div>
+             
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" name="messege" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                        <label for="message">mensaje</label>
+                        <div class="invalid-feedback" data-sb-feedback="message:required">Requiere un mensaje.</div>
+                    </div>
+                   
+                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+             
+                    <div  class="d-grid"></div>
+                    <input type="submit" name="create" value="Enviar"
+                     class="btn btn-warning btn-lg">
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+        
         <!-- Footer-->
         <footer class="py-5 black border-top border-warning">
-            <div class="container"><p class="m-0 text-center text-warning">Copyright &copy; Your Website 2023</p></div>
+            <div class="container"><p class="m-0 text-center text-warning">Copyright &copy; Gonzalo, Lisandro, Nicolas 2023</p></div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
