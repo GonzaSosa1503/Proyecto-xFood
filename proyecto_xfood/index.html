@@ -15,19 +15,48 @@
     </head>
     <body class="black">
         <!-- Responsive navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark black border-bottom border-warning">
-            <div class="container px-lg-5 bs">
-                <a class="navbar-brand text-warning" href="#!">xFood.com</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active text-warning" aria-current="page" href="#!">inicio</a></li>
-                        <li class="nav-item"><a class="nav-link text-warning" href="#!">About</a></li>
-                        <li class="nav-item"><a class="nav-link text-warning" href="#!">Contacto</a></li>
-                    </ul>
+        <nav class="navbar navbar-dark bg-black">
+            <div class="container-fluid">
+              <img src="image/x-icon" alt="logo" width="60px">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-text h1 text-warning">Xfood</span>
+              </button>
+          
+              <button class="navbar-toggler" type "button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          
+              <section class="offcanvas offcanvas-start bg-black text-warning" id="menuLateral" tabindex="-1">
+                <div class="offcanvas-header" data-bs-theme="dark">
+                  <h5 class="offcanvas-title text-info"></h5>
+                  <button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="offcanvas"></button>
                 </div>
+          
+                <div class="offcanvas-body d-flex flex-column justify-content-between px-0">
+                  <ul class="navbar-nav fs-5 justify-content-evenly">
+                    <li class="nav-item p-3 py-md-1">
+                      <a href="" class="nav-link text-warning">INICIO</a>
+                    </li>
+                    <li class="nav-item p-3 py-md-1">
+                      <a href="" class="nav-link text-warning">PRODUCTO</a>
+                    </li>
+                    <li class="nav-item p-3 py-md-1">
+                      <a href="" class="nav-link text-warning">SOBRE NOSOTROS</a>
+                    </li>
+                    <li class="nav-item p-3 py-md-1">
+                      <a href="" class="nav-link text-warning">CONTACTOS</a>
+                    </li>
+                  </ul>
+          
+                  <div class="align-self-center py-3">
+                    <a href=""><i class="bi bi-facebook px-2 text-warning fs-2"></i></a>
+                    <a href=""><i class="bi bi-instagram px-2 text-warning fs-2"></i></a>
+                    <a href=""><i class="bi bi-whatsapp px-2 text-warning fs-2"></i></a>
+                  </div>
+                </div>
+              </section>
             </div>
-        </nav>
+          </nav>
         <!-- Header-->
         <header class="py-5">
             <div class="container px-lg-5">
